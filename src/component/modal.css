@@ -1,0 +1,52 @@
+.modal {
+  position: absolute;
+  bottom: 50%;
+  background-color: #bed9bef8;
+  color: brown;
+  font-weight: 500;
+  padding: 0% 2%;
+  margin: 3% 0%;
+  width: 30vw;
+  border-radius: 15px;
+  filter: drop-shadow(2px 2px 2px black);
+  animation: modal 1s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 35vw;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    padding: 5%;
+  }
+}
+
+@keyframes modal {
+  0% {
+    bottom: 100%;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
