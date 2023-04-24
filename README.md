@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Project HRNET Formation OpenClassrooms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Convert jquery app to react
 
-## Available Scripts
+Hrnet is an internal web application, which manages employee records. The application is old and uses jQuery on the front end, which leads to considerable bugs.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+[repository HRnet jQuery](https://github.com/OpenClassrooms-Student-Center/P12_Front-end.git)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tasks performed for this project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Clone the repository Hrnet jQuery
+- Convert the entire HRNet project to React.
+- Convert one of the four current jQuery plugins to React.
+- Replace the 3 remaining jQuery plugins with React components
+- Add a state management system to store employees
+- Perform unit tests
+- Perform Lighthouse benchmarks comparing the old and new app.
 
-### `npm test`
+#### Technologies and Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Npm](https://www.npmjs.com/package/npm) (v8.19.2)
+- [NodeJS](https://nodejs.org/en/) (v18.12.1)
+- [React](https://fr.reactjs.org/) (v18.0.2)
+- [React-router-dom](https://reactrouter.com/) (v6.10.0)
+- [Redux Toolkit](https://redux-toolkit.js.org/) (v1.9.3)
+- [React-hook-form](https://react-hook-form.com/) (v7.43.9)
+- [Jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) (v5.16.5)
 
-### `npm run build`
+##### Project plugins
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [react-select](https://react-select.com/) (5.7.2)
+- [react-datepicker](https://reactdatepicker.com/) (4.11.0)
+- [react-data-table-component](https://react-data-table-component.netlify.app) (7.5.3)
+- **Plugin convert**
+- [modal-validation-react](https://github.com/Jerry-bz/modal-plugin) (1.0.0)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Install the application HRnet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone the repository of HRnet Front-End on [Hrnet-react](https://github.com/Jerry-bz/hrnet-react)
 
-### `npm run eject`
+Inside this Front-End repository, install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+With the terminal, launch Front-End on port 3000:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Front-End is now rendered at URL `http://localhost:3000`
 
-## Learn More
+# Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jerry Brzt

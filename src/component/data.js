@@ -3,9 +3,15 @@ import DataTable from "react-data-table-component";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import noneEmployee from "../assets/logo-employee-none.png";
-import "../styles/employee.list.css";
+import "../styles/employees.css";
 
-export default function EmployeeList() {
+/**
+ *  DataEmployees component
+ * @returns {JSX.Element}
+ */
+
+export default function DataEmployees() {
+  // Data table
   const columns = [
     {
       name: "Fist Name",
@@ -71,8 +77,13 @@ export default function EmployeeList() {
     },
   };
 
+  // Get employee list from redux store
   const employees = useSelector((state) => state.employee);
+
+  // Search term state and handler
   const [searchTerm, setSearchTerm] = useState("");
+
+  // Fields to search
   const searchFields = [
     "firstName",
     "lastName",
@@ -111,6 +122,9 @@ export default function EmployeeList() {
         columns={columns}
         data={filteredEmployees}
         customStyles={customStyles}
+        pagination
+        paginationPerPage={10}
+        paginationRowsPerPageOptions={[5, 10, 25, 50, 100]}
       />
       <Link to={"/"}>
         <h1>Home</h1>
