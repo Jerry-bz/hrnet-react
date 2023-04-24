@@ -6,7 +6,7 @@ Hrnet is an internal web application, which manages employee records. The applic
 
 ---
 
-[repository HRnet jQuery](https://github.com/OpenClassrooms-Student-Center/P12_Front-end.git)
+[Repository HRnet jQuery](https://github.com/OpenClassrooms-Student-Center/P12_Front-end.git)
 
 ### Tasks performed for this project
 
@@ -28,12 +28,14 @@ Hrnet is an internal web application, which manages employee records. The applic
 - [React-hook-form](https://react-hook-form.com/) (v7.43.9)
 - [Jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) (v5.16.5)
 
-##### Project plugins
+#####  Plugins with React components
 
 - [react-select](https://react-select.com/) (5.7.2)
 - [react-datepicker](https://reactdatepicker.com/) (4.11.0)
 - [react-data-table-component](https://react-data-table-component.netlify.app) (7.5.3)
-- **Plugin convert**
+
+##### Plugin converts
+
 - [modal-validation-react](https://github.com/Jerry-bz/modal-plugin) (1.0.0)
 
 ##### Install the application HRnet
