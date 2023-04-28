@@ -1,4 +1,4 @@
-import LogoEntreprise from "../assets/logo.entreprise.jpg";
+import LogoEntreprise from "../assets/logo.entreprise.png";
 import { Link } from "react-router-dom";
 import { EmployeeForm } from "../component/form";
 import "../styles/home.css";
@@ -14,6 +14,7 @@ export default function Home() {
       <div className="home-container">
         <div className="home-header">
           <img
+            loading="eager"
             className="home-img"
             src={LogoEntreprise}
             alt="logo-entreprise"

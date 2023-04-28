@@ -7,7 +7,7 @@
 }
 
 .home-container {
-  background-image: linear-gradient(to top left, #dee4e4 50%, #bed9bef8 50%);
+  background: linear-gradient(to top left, #dee4e4 50%, #bed9bef8 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,5 +30,22 @@
 
 .home-img {
   border-radius: 15px;
-  width: 50%;
+  width: 5vw;
+  aspect-ratio: 4/4;
+}
+
+@media screen and (max-width: 1440px) {
+  .home-img {
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-img {
+    width: 15vw;
+  }
+
+  .home-container {
+    width: 65vw;
+  }
 }

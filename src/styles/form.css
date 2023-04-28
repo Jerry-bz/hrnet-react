@@ -70,14 +70,9 @@ input {
 }
 
 @media screen and (max-width: 1024px) {
-  .form-img {
-    width: 100%;
-  }
-
   .form-save {
     width: 15vw;
   }
 }
 
-@media screen and (max-width: 768px) {
-}
+

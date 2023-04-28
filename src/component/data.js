@@ -137,6 +137,7 @@ export default function DataEmployees() {
     <section className="employee">
       <h1 className="employee-title">Current Employee</h1>
       <img
+        loading="eager"
         className="employee-img"
         src={noneEmployee}
         alt="none-employee"
