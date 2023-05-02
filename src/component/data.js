@@ -3,7 +3,7 @@ import DataTable from "react-data-table-component";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import noneEmployee from "../assets/logo-employee-none.png";
-import "../styles/employees.css";
+import "../styles/data.css";
 
 /**
  *  DataEmployees component
@@ -14,7 +14,7 @@ export default function DataEmployees() {
   // Data table
   const columns = [
     {
-      name: "Fist Name",
+      name: "First Name",
       selector: (row) => row.firstName,
       sortable: true,
     },
@@ -107,9 +107,9 @@ export default function DataEmployees() {
 
   // If there are employees, display the list
   const employeeExists = (
-    <section className="employee">
-      <h1 className="employee-title">Current Employee(s)</h1>
-      <div className="employee-search">
+    <section className="data">
+      <h1 className="data-title">Current Employee(s)</h1>
+      <div className="data-search">
         <label htmlFor="search">Search</label>
         <input
           type="search"
@@ -118,13 +118,13 @@ export default function DataEmployees() {
         />
       </div>
       <DataTable
-        className="employee-datatable"
         columns={columns}
         data={filteredEmployees}
         customStyles={customStyles}
         pagination
-        paginationPerPage={10}
+        paginationPerPage={5}
         paginationRowsPerPageOptions={[5, 10, 25, 50, 100]}
+        className="data-table-responsive"
       />
       <Link to={"/"}>
         <h1>Home</h1>
@@ -134,15 +134,15 @@ export default function DataEmployees() {
 
   // If there are no employees, display a message
   const employeeNotExists = (
-    <section className="employee">
-      <h1 className="employee-title">Current Employee</h1>
+    <section className="data">
+      <h1 className="data-title">Current Employee</h1>
       <img
         loading="eager"
-        className="employee-img"
+        className="data-img"
         src={noneEmployee}
-        alt="none-employee"
+        alt="none-data"
       ></img>
-      <p className="employee-none">No employee is registered in the database</p>
+      <p className="data-none">No employee is registered in the database</p>
       <Link to={"/"}>
         <h1>Home</h1>
       </Link>
