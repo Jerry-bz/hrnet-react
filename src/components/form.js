@@ -57,6 +57,7 @@ export const EmployeeForm = () => {
         <div className="form-informations">
           <label>First Name</label>
           <input
+            data-testid="firstName"
             type="text"
             {...register("firstName", {
               required: "Firstname is required",
@@ -170,13 +171,7 @@ export const EmployeeForm = () => {
         </div>
         <button className="form-save">Save</button>
       </form>
-      {modal ? (
-        <Modal
-          closeModal={closeModal}
-          firstName={employeesData.firstName}
-          lastName={employeesData.lastName}
-        />
-      ) : null}
+      {modal ? <Modal closeModal={closeModal} /> : null}
     </>
   );
 };

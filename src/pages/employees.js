@@ -1,4 +1,4 @@
-import DataEmployees from "../component/data";
+import DataEmployees from "../components/data";
 
 // Show employees
 export default function Employees() {

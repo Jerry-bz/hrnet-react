@@ -30,6 +30,18 @@
   padding: 5%;
 }
 
+.data-table-responsive .rdt_TableHeadRow {
+  color: black;
+  background-color: white;
+  font-weight: 500;
+}
+
+.data-table-responsive .rdt_TableRow {
+  background-color: grey;
+  color: white;
+  font-weight: 500;
+}
+
 .data a {
   color: #6f8514;
 }

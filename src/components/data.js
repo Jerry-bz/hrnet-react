@@ -60,23 +60,6 @@ export default function DataEmployees() {
     },
   ];
 
-  //  Internally, customStyles will deep merges your customStyles with the default styling.
-  const customStyles = {
-    headCells: {
-      style: {
-        background: "#FFFFFF",
-        color: "black",
-        fontSize: "1.2em",
-      },
-    },
-    cells: {
-      style: {
-        color: "white",
-        background: "grey",
-      },
-    },
-  };
-
   // Get employee list from redux store
   const employees = useSelector((state) => state.employee);
 
@@ -120,7 +103,6 @@ export default function DataEmployees() {
       <DataTable
         columns={columns}
         data={filteredEmployees}
-        customStyles={customStyles}
         pagination
         paginationPerPage={5}
         paginationRowsPerPageOptions={[5, 10, 25, 50, 100]}

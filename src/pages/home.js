@@ -1,6 +1,6 @@
 import LogoEntreprise from "../assets/logo.entreprise.png";
 import { Link } from "react-router-dom";
-import { EmployeeForm } from "../component/form";
+import { EmployeeForm } from "../components/form";
 import "../styles/home.css";
 
 /**
