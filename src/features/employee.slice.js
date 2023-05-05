@@ -7,6 +7,8 @@ const employeeSlice = createSlice({
   reducers: {
     // get all employees
     getEmployee: (state, action) => {
+      // State is the current state
+      // Action is the action to be performed
       return [...state, action.payload];
     },
   },

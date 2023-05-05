@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import DataTable from "react-data-table-component";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import noneEmployee from "../assets/logo-employee-none.png";
 import "../styles/data.css";
@@ -10,7 +9,8 @@ import "../styles/data.css";
  * @returns {JSX.Element}
  */
 
-export default function DataEmployees() {
+// Take parameters data from the store
+export default function DataEmployees({ data }) {
   // Data table
   const columns = [
     {
@@ -60,9 +60,6 @@ export default function DataEmployees() {
     },
   ];
 
-  // Get employee list from redux store
-  const employees = useSelector((state) => state.employee);
-
   // Search term state and handler
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -80,7 +77,7 @@ export default function DataEmployees() {
   ];
 
   // Filter employee list by search term
-  const filteredEmployees = employees.filter((employee) =>
+  const filteredEmployees = data.filter((employee) =>
     searchFields.some(
       (field) =>
         employee[field] &&
@@ -131,5 +128,5 @@ export default function DataEmployees() {
     </section>
   );
 
-  return employees.length > 0 ? employeeExists : employeeNotExists;
+  return data.length > 0 ? employeeExists : employeeNotExists;
 }

@@ -34,9 +34,6 @@ export const EmployeeForm = () => {
   // Modal to display the employee created
   const [modal, setModal] = useState(false);
 
-  // Get the data of the employee created
-  const [employeesData, setEmployeesData] = useState({});
-
   const closeModal = () => {
     setModal(false);
   };
@@ -48,7 +45,6 @@ export const EmployeeForm = () => {
           console.log(data, "data");
           dispatch(getEmployee(data));
           reset();
-          setEmployeesData(data);
           setModal(true);
         })}
         action="#"

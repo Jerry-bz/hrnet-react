@@ -5,15 +5,15 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { EmployeeForm } from "../components/form";
 
+// Create a fake store with a reducer that returns an empty array
+const store = configureStore({
+  reducer: {
+    employees: () => [],
+  },
+});
+
 // Test the Employee Form component
 describe("Checks the display of the Employee Form component", () => {
-  // Create a fake store with a reducer that returns an empty array
-  const store = configureStore({
-    reducer: {
-      employees: () => [],
-    },
-  });
-
   // Test that the form renders a save button
   it("should display the save button", () => {
     render(
@@ -39,7 +39,6 @@ describe("Checks the display of the Employee Form component", () => {
   });
 
   // Test that the form renders a first name input
-
   it("should change value a firstname input", () => {
     render(
       <Provider store={store}>
