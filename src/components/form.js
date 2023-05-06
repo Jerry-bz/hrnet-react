@@ -5,6 +5,7 @@ import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Modal from "modal-validation-react";
+import majorDate from "../utils/major.date";
 import { getEmployee } from "../features/employee.slice";
 import { states } from "../utils/states.select";
 import { departments } from "../utils/departments.select";
@@ -86,6 +87,7 @@ export const EmployeeForm = () => {
               setDateBirth(date);
               setValue("dateOfBirth", date.toLocaleDateString());
             }}
+            maxDate={majorDate()}
           />
         </div>
         <div className="form-informations">

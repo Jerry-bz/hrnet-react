@@ -28,7 +28,7 @@ Hrnet is an internal web application, which manages employee records. The applic
 - [React-hook-form](https://react-hook-form.com/) (v7.43.9)
 - [Jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) (v5.16.5)
 
-#####  Plugins with React components
+##### Plugins with React components
 
 - [react-select](https://react-select.com/) (5.7.2)
 - [react-datepicker](https://reactdatepicker.com/) (4.11.0)
@@ -51,6 +51,14 @@ With the terminal, launch Front-End on port 3000:
 `npm start`
 
 Front-End is now rendered at URL `http://localhost:3000`
+
+##### Launch application tests
+
+With the terminal, lanch
+
+`npm run test`
+
+You can install extension Jest in vscode for better experience
 
 # Author
 
