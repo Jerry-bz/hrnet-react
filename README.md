@@ -60,6 +60,10 @@ With the terminal, lanch
 
 You can install extension Jest in vscode for better experience
 
+### Site deployment link
+
+https://hrnet-react.vercel.app/
+
 # Author
 
 Jerry Brzt
