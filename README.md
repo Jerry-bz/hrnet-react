@@ -1,6 +1,6 @@
 <!-- The badges were made on the site "https://forthebadge.com/" -->
 
-[![logo project](.public/svg.readme/hrnet-project-openclassrooms.svg)](https://openclassrooms.com/fr/)
+[![logo project](./public/svg.readme/hrnet-project-openclassrooms.svg)](https://openclassrooms.com/fr/)
 
 ## Convert jQuery app to React
 
