@@ -36,7 +36,7 @@ Hrnet is an internal web application, which manages employee records. The applic
 
 ##### Plugin converts
 
-- [modal-validation-react](https://github.com/Jerry-bz/modal-plugin) (1.0.0)
+- [react-modal-hrnet](https://github.com/Jerry-bz/react-modal-hrnet.git) (1.0.0)
 
 ##### Install the application HRnet
 

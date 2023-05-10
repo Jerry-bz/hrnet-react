@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Modal from "modal-validation-react";
+import Modal from "react-modal-hrnet";
 import majorDate from "../utils/major.date";
 import { getEmployee } from "../features/employee.slice";
 import { states } from "../utils/states.select";
@@ -43,7 +43,6 @@ export const EmployeeForm = () => {
     <>
       <form
         onSubmit={handleSubmit((data) => {
-          console.log(data, "data");
           dispatch(getEmployee(data));
           reset();
           setModal(true);
