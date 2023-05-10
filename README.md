@@ -1,14 +1,16 @@
-# Project HRNET Formation OpenClassrooms
+<!-- The badges were made on the site "https://forthebadge.com/" -->
 
-## Convert jquery app to react
+[![logo project](.public/svg.readme/hrnet-project-openclassrooms.svg)](https://openclassrooms.com/fr/)
+
+## Convert jQuery app to React
 
 Hrnet is an internal web application, which manages employee records. The application is old and uses jQuery on the front end, which leads to considerable bugs.
 
----
-
 [Repository HRnet jQuery](https://github.com/OpenClassrooms-Student-Center/P12_Front-end.git)
 
-### Tasks performed for this project
+---
+
+## Tasks performed for this project
 
 - Clone the repository Hrnet jQuery
 - Convert the entire HRNet project to React.
@@ -18,29 +20,31 @@ Hrnet is an internal web application, which manages employee records. The applic
 - Perform unit tests
 - Perform Lighthouse benchmarks comparing the old and new app.
 
-#### Technologies and Dependencies
+## Technologies and Dependencies
 
-- [Npm](https://www.npmjs.com/package/npm) (v8.19.2)
-- [NodeJS](https://nodejs.org/en/) (v18.12.1)
-- [React](https://fr.reactjs.org/) (v18.0.2)
-- [React-router-dom](https://reactrouter.com/) (v6.10.0)
-- [Redux Toolkit](https://redux-toolkit.js.org/) (v1.9.3)
-- [React-hook-form](https://react-hook-form.com/) (v7.43.9)
-- [Jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/) (v5.16.5)
+[![logo npm](./public/svg.readme/npm.svg)](https://www.npmjs.com/package/npm)
+[![logo nodeJS](./public/svg.readme/nodejs.svg)](https://nodejs.org/en/)
+[![logo react](./public/svg.readme/react.svg)](https://fr.reactjs.org/)
+[![logo react-router](./public/svg.readme/react-router-dom.svg)](https://reactrouter.com/)
+[![logo redux](./public/svg.readme/redux-toolkit.svg)](https://redux-toolkit.js.org/)
+[![logo react-hook-form](./public/svg.readme/react-hook-form.svg)](https://react-hook-form.com/)
+[![logo jest-dom](./public/svg.readme/jest-dom.svg)](https://testing-library.com/docs/ecosystem-jest-dom/)
 
-##### Plugins with React components
+## Plugins with React components
 
-- [react-select](https://react-select.com/) (5.7.2)
-- [react-datepicker](https://reactdatepicker.com/) (4.11.0)
-- [react-data-table-component](https://react-data-table-component.netlify.app) (7.5.3)
+[![logo react-select](./public/svg.readme/react-select.svg)](https://react-select.com/)
+[![logo react-datepicker](./public/svg.readme/react-datepicker.svg)](https://reactdatepicker.com/)
+[![logo react-data-table-component](./public/svg.readme/react-data-table-component.svg)](https://react-data-table-component.netlify.app)
 
-##### Plugin converts
+## Plugin converts
 
-- [react-modal-hrnet](https://github.com/Jerry-bz/react-modal-hrnet.git) (1.0.0)
+[![logo react-modal-hrnet](./public/svg.readme/react-modal-hrnet.svg)](https://github.com/Jerry-bz/react-modal-hrnet.git)
 
-##### Install the application HRnet
+---
 
-- Clone the repository of HRnet Front-End on [Hrnet-react](https://github.com/Jerry-bz/hrnet-react)
+### Install the application HRnet
+
+Clone the repository of HRnet Front-End on [Hrnet-react](https://github.com/Jerry-bz/hrnet-react)
 
 Inside this Front-End repository, install dependencies:
 
@@ -52,7 +56,7 @@ With the terminal, launch Front-End on port 3000:
 
 Front-End is now rendered at URL `http://localhost:3000`
 
-##### Launch application tests
+### Launch application tests
 
 With the terminal, lanch
 
@@ -62,8 +66,8 @@ You can install extension Jest in vscode for better experience
 
 ### Site deployment link
 
-https://hrnet-react.vercel.app/
+[![redirect to deployed application](./public/svg.readme/https___hrnet-react.vercel.app_.svg)](https://hrnet-react.vercel.app/)
 
-# Author
+### Author
 
 Jerry Brzt
